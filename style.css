@@ -20,14 +20,14 @@ html{
 }
 
 body{
-    background-color: rgb(9, 14, 22);
+    background: linear-gradient(to bottom, rgb(9, 14, 22), rgb(9, 18, 32));
     color: white;
 }
 
 header{
     width: 90%;
     height: 70px;
-    background-color: rgba(83, 15, 12, 0.418);;
+    background-color: rgba(83, 15, 12, 0.418);
     margin: 25px auto auto auto;
     display: flex;
     justify-content: space-between;
@@ -150,14 +150,15 @@ a{
     flex-wrap: wrap;
 }
 
-.icon-techs{
+#kodular{
     width: 60px;
-    transition: transform 0.3s ease;
 }
 
-.icon-techs:hover{
-    transform: scale(1.2);
+.icon-techs{
+    width: 60px;
 }
+
+
 
 .text-icon-techs{
     margin: auto;
@@ -189,7 +190,7 @@ a{
 
 .box {
     display: flex;
-    flex-direction: column; /* Organiza os itens verticalmente */
+    flex-direction: column;
     padding: 16px;
     border: 2px solid rgb(136, 18, 14);
     position: relative;
@@ -211,10 +212,10 @@ a{
 
 .df-periodo {
     display: flex;
-    justify-content: space-between; /* Espaça os itens horizontalmente */
-    align-items: flex-end; /* Alinha os itens na parte inferior */
-    margin-top: auto; /* Empurra os itens para o final da box */
-    width: 100%; /* Garante que ocupe toda a largura da box */
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    width: 100%;
     color: rgb(202, 15, 8);
 }
 
@@ -297,4 +298,32 @@ footer{
 
 .text-box{
     color: rgba(206, 206, 206, 0.836);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 2s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 2s;
+} 
+
+.df-techs :nth-child(2){
+    transition-delay: 500ms;
+}
+
+.df-techs :nth-child(3){
+    transition-delay: 700ms;
+}
+
+.df-techs :nth-child(4){
+    transition-delay: 900ms;
+}
+
+.df-techs :nth-child(5){
+    transition-delay: 1000ms;
 }
