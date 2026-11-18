@@ -1,1 +1,1 @@
-Site contendo informações sobre mim.
+Site contendo algumas informações sobre minha carreira acadêmica e profissional
